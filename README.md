@@ -4,6 +4,28 @@
 
 This repository contains the code and resources for exploring BERT variants and hyperparameter tuning in the context of sentence classification using the Microsoft Research Paraphrase Corpus (MRPC) dataset. The primary goal is to analyze how different hyperparameters and model variants affect performance and provide insights into best practices for model selection and tuning in NLP tasks.
 
+𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰 𝐨𝐟 𝐁𝐄𝐑𝐓
+
+BERT (Bidirectional Encoder Representations from Transformers) is a powerful method for pre-training language models. It involves training a general-purpose "language understanding" model on a large text corpus, such as Wikipedia. Once pre-trained, this model can be fine-tuned for specific Natural Language Processing (NLP) tasks, like question answering, making BERT highly effective for various applications.
+
+𝐁𝐢𝐝𝐢𝐫𝐞𝐜𝐭𝐢𝐨𝐧𝐚𝐥 𝐂𝐨𝐧𝐭𝐞𝐱𝐭𝐮𝐚𝐥 𝐔𝐧𝐝𝐞𝐫𝐬𝐭𝐚𝐧𝐝𝐢𝐧𝐠
+
+What makes BERT stand out from previous models is its deeply bidirectional approach. Unlike earlier models, which were unidirectional or only shallowly bidirectional, BERT can fully capture the context of a word by analyzing the words both before and after it in a sentence. For instance, in the sentence "I made a bank deposit," BERT understands the word "bank" by considering the entire sentence, not just the words that come before it.
+
+𝐓𝐫𝐚𝐢𝐧𝐢𝐧𝐠 𝐏𝐫𝐨𝐜𝐞𝐬𝐬
+
+𝐁𝐄𝐑𝐓'𝐬 𝐭𝐫𝐚𝐢𝐧𝐢𝐧𝐠 𝐢𝐧𝐯𝐨𝐥𝐯𝐞𝐬 𝐭𝐰𝐨 𝐦𝐚𝐢𝐧 𝐭𝐚𝐬𝐤𝐬:
+
+𝐌𝐚𝐬𝐤𝐞𝐝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐌𝐨𝐝𝐞𝐥𝐢𝐧𝐠: In this task, 15% of the words in a sentence are masked, and BERT is trained to predict these missing words.
+**Next Sentence Prediction**: This task helps BERT learn the relationships between sentences by determining whether one sentence naturally follows another.
+
+**Pre-training and Fine-tuning**
+
+Pre-training BERT is computationally intensive, often requiring several days on powerful hardware like Cloud TPUs. However, this is a one-time process, and the pre-trained models can then be fine-tuned for specific tasks with much less computational effort, often in just a few hours on a GPU.
+
+**Versatility in NLP Tasks**
+BERT’s adaptability is a major strength. It can be easily applied to a wide range of NLP tasks, including sentence classification, sentence pair classification, named entity recognition, and question answering. BERT often achieves state-of-the-art results in these tasks with minimal task-specific modifications.
+
 **Repository_Structure**
 
 data/: Contains the dataset and data preprocessing scripts.
