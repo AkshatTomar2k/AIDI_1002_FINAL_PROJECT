@@ -84,5 +84,7 @@ The results and analysis of these hyperparameter settings are detailed in the Ju
 The results of the experiments, including performance metrics for different hyperparameter configurations and model variants, are available in the results/ directory. The comparative analysis includes:
 
 Accuracy of BERT-Base vs. BERT-Large
+
 Impact of Learning Rate on model performance
+
 Effects of Batch Size and Number of Epochs
